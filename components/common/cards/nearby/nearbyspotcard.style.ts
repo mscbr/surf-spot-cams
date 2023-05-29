@@ -5,43 +5,44 @@ import { COLORS, SHADOWS, SIZES } from "../../../../constants";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "space-between",
     alignItems: "center",
-    flexDirection: "row",
     padding: SIZES.medium,
     borderRadius: SIZES.small,
     backgroundColor: "#FFF",
     ...SHADOWS.medium,
     shadowColor: COLORS.white,
+    maxWidth: 150
   },
   logoContainer: {
-    width: 50,
-    height: 50,
+    width: 150,
+    height: 130,
     backgroundColor: COLORS.white,
     borderRadius: SIZES.medium,
     justifyContent: "center",
     alignItems: "center",
+    overflow: "hidden",
+    marginBottom: 8
   },
-  logImage: {
-    width: "70%",
-    height: "70%",
+  logoImage: {
+    width: "180%",
+    height: "180%"
   },
   textContainer: {
     flex: 1,
-    marginHorizontal: SIZES.medium,
+    marginHorizontal: SIZES.medium
   },
-  jobName: {
+  spotName: {
     fontSize: SIZES.medium,
     fontFamily: "DMBold",
-    color: COLORS.primary,
+    color: COLORS.primary
   },
   jobType: {
     fontSize: SIZES.small + 2,
     fontFamily: "DMRegular",
     color: COLORS.gray,
     marginTop: 3,
-    textTransform: "capitalize",
-  },
+    textTransform: "capitalize"
+  }
 });
 
 export default styles;

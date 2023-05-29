@@ -1,5 +1,7 @@
 {
   "extends": "expo/tsconfig.base",
+  "include": ["**/*.tsx"],
+  "typeRoots": ["./types"],
   "compilerOptions": {
     "strict": true
   }
